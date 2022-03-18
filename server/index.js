@@ -8,6 +8,7 @@ const app = express();
 
 //! middleware
 app.use(cors());
+app.use(express.json());
 
 app.listen(5000, () => {
   // if the server starts
