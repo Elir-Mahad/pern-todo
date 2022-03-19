@@ -13,3 +13,15 @@
 -- \c (move inside a database)
 -- \dt (show a table in database)
 
+CREATE DATABASE perntodo;
+-- create a database and call it perntodo
+
+CREATE TABLE todo(
+    -- create a table called todo 
+    -- and below specify how its going to look
+    todo_id SERIAL PRIMARY KEY,
+    -- give the todo a unique id that will make it distinguishable from other id's
+    --  serial is a function that is going to increase our primary key (id) to ensure uniqueness 
+    description VARCHAR(255)
+    -- the description will have a maximum number of 255 characters
+);
